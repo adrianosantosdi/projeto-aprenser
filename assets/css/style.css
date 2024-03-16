@@ -1,9 +1,97 @@
+:root {
+    --primary-color: #FED001;
+    --color-dark: #2A2A2A;
+    --color-dark2: #003464;
+    --color-light: #FAFAFA;
+    --color-black: #000;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+html {
+    font-size: 62.5%;
     font-family: "Montserrat", sans-serif;
+    font-weight: 400;
 }
+
+p, a {
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 4.8rem;
+    margin-bottom: 4rem;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: 1.6rem 4.6rem;
+}
+
+.wrapper-container-dark {
+    background-color: var(--color-dark); 
+    color: var(--color-light);   
+}
+
+.wrapper-container-light {
+    background-color: var(--color-light);
+}
+
+.wrapper-container-dark2 {
+    background-color: var(--color-dark2); 
+    color: var(--color-light);    
+}
+
+.container {
+    max-width: 127.6rem;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-color);
+    padding: 2rem 0;
+}
+
+.header_nav ul {
+    display: flex;
+    gap: .6rem;
+    list-style: none;
+}
+
+.header_nav a {
+    display: block;
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    padding: .75em 1.15em;
+    color: var(--primary-color);
+}
+
+.header_nav a:hover {
+    background-color: var(--color-black);
+}
+
+.hero-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 19rem;
+}
+
+.wrapper-container-hero {
+   background: linear-gradient(transparent, var(--primary-color)); 
+}
+
