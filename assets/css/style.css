@@ -4,6 +4,8 @@
     --color-dark2: #003464;
     --color-light: #FAFAFA;
     --color-black: #000;
+    --color-cinza: #949494;
+    --fonte-primaria: "Montserrat", sans-serif;
 }
 
 * {
@@ -14,7 +16,7 @@
 
 html {
     font-size: 62.5%;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-primaria);
     font-weight: 400;
 }
 
@@ -27,6 +29,18 @@ h1 {
     margin-bottom: 4rem;
 }
 
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+nav a {
+    color: inherit;
+}
+
 .upper {
     text-transform: uppercase;
 }
@@ -37,6 +51,11 @@ h1 {
     font-size: 1.8rem;
     text-decoration: none;
     padding: 1.6rem 4.6rem;
+    display: inline-block;
+}
+
+.wrapper-container {
+   padding-top: 1px;
 }
 
 .wrapper-container-dark {
@@ -48,6 +67,10 @@ h1 {
     background-color: var(--color-light);
 }
 
+.wrapper-container-light h2 {
+    margin: 30px 0 30px 0;
+}
+
 .wrapper-container-dark2 {
     background-color: var(--color-dark2); 
     color: var(--color-light);    
@@ -56,6 +79,16 @@ h1 {
 .container {
     max-width: 127.6rem;
     margin: auto;
+}
+
+.section_title {
+    padding: 7rem 0;
+    text-align: center;
+    margin: 0;
+}
+
+.section_btn {
+    margin: 4.5rem 0;
 }
 
 .header {
@@ -95,3 +128,65 @@ h1 {
    background: linear-gradient(transparent, var(--primary-color)); 
 }
 
+.cursos {
+    text-align: center;
+}
+
+.cursos-container {
+    display: flex;
+    text-align: left;
+    gap: 10px;
+}
+
+.curso-card {
+
+}
+
+.curso-card h3 {
+    font-size: 2.4rem;
+}
+
+.curso-card p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.curso-card-content {
+    padding: 1rem 1.25rem;
+    border: 1px solid #CCC;
+    border-radius: 0 0 8px 8px;
+    border-top: transparent;
+}
+
+.escola {
+    display: flex;
+    gap: 3rem;
+}
+
+.escola h2 {
+    padding: 25px 0 10px 0;
+}
+
+.escola p {
+    padding: 25px 0 10px 0;
+    line-height: 1.5;
+}
+
+.titulo-contato {
+    text-align: center;
+    padding: 10px;
+}
+
+.contatos_address {
+    text-align: right;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: var(--fonte-primaria);
+    padding: 3rem 0;
+}
+
+.footer {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 4.5rem;
+}
